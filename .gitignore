@@ -2,8 +2,11 @@
 
 # ---- Backend (Rust) ----
 
-# Rust build outputs
+# Rust build outputs - Don't push target directory
 /backend/target/
+/backend/target/**/*
+target/
+**/target/
 /backend/debug/
 /backend/release/
 
