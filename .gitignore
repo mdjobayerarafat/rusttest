@@ -1,0 +1,124 @@
+# Project .gitignore for combined Rust backend + Next.js frontend project
+
+# ---- Backend (Rust) ----
+
+# Rust build outputs
+/backend/target/
+/backend/debug/
+/backend/release/
+
+# Rust dependencies and generated files
+/backend/Cargo.lock
+/backend/bin/
+/backend/**/*.rs.bk
+/backend/**/*.o
+/backend/**/*.so
+/backend/**/*.d
+/backend/**/*.rlib
+
+# Uploaded files (user content)
+/backend/uploads/
+
+# Environment variables
+/backend/.env
+/backend/.env.*
+
+# Node.js mock server files
+/backend/node_modules/
+/backend/package-lock.json
+
+# ---- Frontend (Next.js) ----
+
+# Next.js build outputs
+/frontend/.next/
+/frontend/out/
+/frontend/build/
+/frontend/dist/
+
+# Next.js dependencies
+/frontend/node_modules/
+/frontend/.pnp
+/frontend/.pnp.js
+
+# Next.js caching
+/frontend/.swc/
+/frontend/.turbo
+
+# Environment variables
+/frontend/.env
+/frontend/.env.*
+/frontend/.env.local
+/frontend/.env.development.local
+/frontend/.env.test.local
+/frontend/.env.production.local
+
+# TypeScript build info
+/frontend/tsconfig.tsbuildinfo
+/frontend/next-env.d.ts
+
+# ---- General Files ----
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# OS specific files
+.DS_Store
+Thumbs.db
+desktop.ini
+.directory
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+.idea/
+.fleet/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Debug and profiling
+*.pid
+*.seed
+*.pid.lock
+.eslintcache
+.nyc_output
+.coverage
+.coverage.*
+coverage
+*.lcov
+.grunt
+bower_components
+*.tsbuildinfo
+
+# Test files
+/test_*.ps1
+*_test.ps1
+*_bench.ps1
+benchmark_*.ps1
+*.test.js
+*.spec.js
+
+# Backups
+*~
+*.bak
+*.backup
+*.orig
+*.old
